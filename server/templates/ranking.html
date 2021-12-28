@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>랭킹</title>
+    <meta http-equiv="refresh" content="5"> <!-- 새로고침 5초 -->
+</head>
+
+<body bgcolor="grey">
+    <h1>랭킹</h1>
+    <h6>5초마다 새로고침됩니다.</h6><br>
+    {% for key, value in data.items() %}
+    {{ loop.index }}위. {{ key }}  ({{ value }}점), <br>
+    {% endfor %}
+    
+</body>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>유저 목록</title>
+</head>
+
+<body bgcolor="grey">
+    <h1>유저 목록</h1>
+    {% for key, value in items2.items() %}
+    {{ loop.index }}. {{ key }} : {{ value }}, <br>
+    {% endfor %}
+    
+</body>
